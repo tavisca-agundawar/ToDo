@@ -1,0 +1,182 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  flex-wrap: wrap;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  flex: 1;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+
+/* Style the list inside the menu */
+ul.Menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li.Menu a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li.Menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li.Menu a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+div.flex-container div a{
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #555;
+  color: white;
+  
+}
+
+div.flex-container div a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+div.flex-container div a:hover:not(.active) {
+  background-color: rgb(39, 38, 38);
+  color: white;
+}
+
+.Menu{
+  flex-direction: column;
+}
+.item{
+  position: relative;
+  margin-top: 20px;
+}
+.edit_button{
+  margin-left: 100px;
+  background-color: rgb(71, 139, 218); 
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  align-items: flex-end;
+}
+
+.edit_button:hover{
+  background-color: rgb(42, 106, 179);
+}
+
+.remove_button{
+  margin-left: 15px;
+  background-color: rgb(247, 19, 19); 
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  align-items: flex-end;
+}
+
+.remove_button:hover{
+  background-color: rgb(196, 21, 21);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 15px;
+  flex-grow: 1;
+}
+
+.loginButton{
+  background-color: rgb(5, 161, 10);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;  
+}
+
+.userDetails{
+  font-family: fantasy;
+  font-size: 1.5ex;
+  color:black;
+}
+
